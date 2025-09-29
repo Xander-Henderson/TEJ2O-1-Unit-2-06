@@ -5,7 +5,9 @@
  * This program turns on and off a LED
 */
 
+// setup
 basic.clearScreen()
+pins.digitalWritePin(DigitalPin.P16, 0)
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
